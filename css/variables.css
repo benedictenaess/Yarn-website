@@ -2,6 +2,9 @@
 	--font-size-xsmall: 12px;
 	--font-size-small: 18px;
 	--font-size-base: 24px;
+	--font-size-medium: 48px;
+	--font-size-large: 80px;
+	--font-size-xlarge: 100px;
 
 	--color-primary: black;
 	--color-secondary: hsl(0, 0%, 65%);
@@ -18,4 +21,5 @@
 	--spacing-small: 0.3rem;
 	--spacing-medium: 1rem;
 	--spacing-large: 2rem;
+	--spacing-xlarge: 4rem;
 }
