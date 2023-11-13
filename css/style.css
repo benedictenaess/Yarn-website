@@ -159,3 +159,20 @@ body {
 	width: 60%;
 	border-bottom: 2px solid black;
 }
+
+.slideshow {
+	margin-top: var(--font-size-large);
+	margin-bottom: var(--font-size-large);
+	width: 100vw;
+}
+
+.slideshow-container {
+	background-color: var(--color-accent-2);
+	display: flex;
+	justify-content: center;
+	gap: var(--spacing-large);
+}
+
+.slideshow-container img {
+	width: 300px;
+}
