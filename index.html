@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/variables.css">
 </head>
 <body>
-	<header>
+	<header class="header-section">
 		<div class="header-container">
 			<button class="header-container-button button-logo">
 				<img src="assets/Logo.svg" alt="Logo">
@@ -34,6 +34,39 @@
 	</header>
 
 	<main>
+		<section class="form-section">
+			<form class="form-container" action="">
+				<h2 class="form-title">Sign up to our newsletter</h2>
+				<div class="center-line">
+					<div class="form-line"></div>
+				</div>
+				<div class="signup-form-content">
+					<div class="input-container">
+						<label for="firstname">First name</label>
+						<input class="singup-input" type="text" name="firstname" id="firstname">
+					</div>
+					<div class="input-container">
+						<label for="lastname">Last name</label>
+						<input class="singup-input" type="text" name="lastname" id="lastname">
+					</div>
+					<div class="input-container">
+						<label for="email">Email</label>
+						<input class="singup-input" type="email" name="email" id="email">
+					</div>
+					<div class="signup-button-container">
+						<div>
+							<input type="checkbox" name="checkbox" id="checkbox" required>
+							<label for="checkbox">I agree to the Terms and Conditions</label>
+						</div>
+						<button class="signup-button">Submit</button>
+					</div>
+				</div>
+
+			</form>
+
+		</section>
+
+
 		<section class="photo-collection">
 			<div class="photo-collection-container">
 				<img class="big-photo" src="assets/img/behrouz-sasani-LePI2_xIjUU-unsplash.jpg" alt="blue knitted sweater">
