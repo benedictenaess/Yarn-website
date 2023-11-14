@@ -107,19 +107,19 @@ h2 {
 	position: absolute;
 	width: 100vw;
 	height: 100vh;
+	display: none;
 }
 
 .form-container {
 	position: fixed;
-	top: 50%;
+	top: 55%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
 	width: 500px;
 	height: 600px;
 	background-color: white;
-	border: 2px solid black;
-	/* display: none; */
+	border: 1px solid black;
 }
 
 .form-title {
@@ -132,7 +132,7 @@ h2 {
 }
 .form-line {
 	width: 70%;
-	border-bottom: 2px solid black;
+	border-bottom: 1px solid black;
 }
 
 .signup-form-content {
@@ -163,10 +163,37 @@ h2 {
 }
 
 .signup-button {
+	background-color: var(--color-accent-1);
 	margin-top: var(--spacing-medium);
 	padding: var(--spacing-small);
 	border: 2px solid black;
 }
+
+.signup-toast {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	display: none;
+}
+
+.signup-toast-container {
+	position: fixed;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 500px;
+	height: 250px;
+	background-color: white;
+	border: 2px solid black;
+	display: flex;
+	align-items: center;
+}
+
+.signup-toast-text {
+	padding: var(--spacing-medium);
+}
+
 
 .photo-collection {
 	display: flex;
