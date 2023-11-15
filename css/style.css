@@ -15,7 +15,7 @@ h2 {
 	/* position: absolute;
 	width: 100vw; */
 	/* height: 10vh; */
-	opacity: 0.5;
+	opacity: 1;
 	transition: 150ms ease-in;
 }
 
