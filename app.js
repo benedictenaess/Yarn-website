@@ -3,19 +3,48 @@
 const hamburgerButton = document.querySelector('.button-hamburger');
 const headerActive = document.querySelector('.active-menu');
 
-// const headerHamburger = ()=>{
-// 	hamburgerButton.addEventListener('click', ()=>{
-// 		headerActive.classList.toggle('active-menu-hide');
-// 	})
-// }
 
-const toggleMenu = () => {
-    headerActive.classList.toggle('active-menu-hide');
-};
+const openMenu = ()=>{
+	hamburgerButton.addEventListener('click', ()=>{
+		headerActive.classList.toggle('active-menu-hide');
+	})
+}
 
-const headerHamburger = () => {
-    hamburgerButton.addEventListener('click', toggleMenu);
-};
+openMenu();
+
+// const toggleMenu = () => {
+//     headerActive.classList.toggle('active-menu-hide');
+// };
+
+// const openMenu = () => {
+//     hamburgerButton.addEventListener('click', toggleMenu);
+// };
+
+//header buttons
+
+const logoBtn = document.querySelector('.button-logo');
+const yarnBtn = document.querySelector('.yarn-button');
+const patternBtn = document.querySelector('.pattern-button');
+const aboutBtn = document.querySelector('.about-button');
+
+logoBtn.addEventListener('click', ()=>{
+	window.location.href = 'index.html';
+});
+
+yarnBtn.addEventListener('click', ()=>{
+	window.location.href = 'yarn.html';
+});
+
+patternBtn.addEventListener('click', ()=>{
+	window.location.href = 'pattern.html';
+});
+
+aboutBtn.addEventListener('click', ()=>{
+	window.location.href = 'about.html';
+});
+
+
+
 
 //singup
 
@@ -66,7 +95,7 @@ const frontpageSignupPopup = () => {
 			frontpagePhotos.style.opacity = '1';
 			frontpageTitle.style.opacity = '1';
 			frontpageSlideshow.style.opacity = '1';
-			headerHamburger();
+			// openMenu();
 		}, 3000);
 	}
 
@@ -81,7 +110,8 @@ const frontpageSignupPopup = () => {
 	submitButton.addEventListener('click', signupSubmitForm)
 };
 
-headerHamburger();
+// openMenu();
+//TODO: UNCOMMENT THE FUNCTION DECLARATIONS
 frontpageSignupPopup();
 
 //Slideshow
