@@ -83,3 +83,47 @@ const frontpageSignupPopup = () => {
 
 headerHamburger();
 frontpageSignupPopup();
+
+//Slideshow
+
+const scrollContainer = document.querySelector('.slideshow-images-container');
+const previousBtn = document.querySelector('.slideshow-previous-button');
+const nextBtn = document.querySelector('.slideshow-next-button');
+
+const scrollSpeed = 8;
+
+const scrollSlideshow = ()=>{
+	const containerChildren = Array.from(scrollContainer.children);
+	scrollContainer.append(...containerChildren.map((child) => child.cloneNode(true)));
+
+	scrollContainer.addEventListener('wheel', (e)=>{
+		e.preventDefault();
+		scrollContainer.scrollLeft += e.deltaY * scrollSpeed;
+		scrollContainer.style.scrollBehavior = 'auto';
+
+		if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2){
+			scrollContainer.scrollLeft = 0;
+		} else if (scrollContainer.scrollLeft <= 0) {
+			scrollContainer.scrollLeft = scrollContainer.scrollWidth / 2;
+		}
+	});
+	
+	nextBtn.addEventListener('click', ()=>{
+		scrollContainer.style.scrollBehavior = 'smooth';
+		scrollContainer.scrollLeft += 300;
+		if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
+			scrollContainer.scrollLeft = 0;
+		}
+	});
+	
+	previousBtn.addEventListener('click', ()=>{
+		scrollContainer.style.scrollBehavior = 'smooth';
+		scrollContainer.scrollLeft -= 300;
+		if (scrollContainer.scrollLeft <= 0) {
+			scrollContainer.scrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+		}
+	});
+}
+
+scrollSlideshow();
+
