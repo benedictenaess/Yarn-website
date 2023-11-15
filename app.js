@@ -3,12 +3,19 @@
 const hamburgerButton = document.querySelector('.button-hamburger');
 const headerActive = document.querySelector('.active-menu');
 
-const headerHamburger = ()=>{
-	hamburgerButton.addEventListener('click', ()=>{
-		headerActive.classList.toggle('active-menu-hide');
-	})
-}
-headerHamburger();
+// const headerHamburger = ()=>{
+// 	hamburgerButton.addEventListener('click', ()=>{
+// 		headerActive.classList.toggle('active-menu-hide');
+// 	})
+// }
+
+const toggleMenu = () => {
+    headerActive.classList.toggle('active-menu-hide');
+};
+
+const headerHamburger = () => {
+    hamburgerButton.addEventListener('click', toggleMenu);
+};
 
 //singup
 
@@ -38,17 +45,20 @@ const frontpageSignupPopup = () => {
                     frontpageSlideshow.style.opacity = '0.5';
                     singupContainer.style.opacity = '1'
                     singupContainer.style.display = 'block'
-                    headerHamburger();
-                }, 1000);
+                    hamburgerButton.removeEventListener('click', toggleMenu);
+                }, 500);
             });
         }
     });
 	
-	
 	const signupToast = document.querySelector('.signup-toast')
+	const signupText = document.querySelector('.signup-toast-text')
+	const firstName = document.querySelector('#firstname');
+	const lastName = document.querySelector('#lastname');
 	
 	const signupToastPopup = () => {
 		signupToast.style.display = 'block'
+		signupText.textContent = `Welcome ${firstName.value} ${lastName.value} to the gang!`
 		signupToast.classList.add('signup-toast-animation')
 		setTimeout(() => {
 			signupToast.remove();
@@ -56,7 +66,8 @@ const frontpageSignupPopup = () => {
 			frontpagePhotos.style.opacity = '1';
 			frontpageTitle.style.opacity = '1';
 			frontpageSlideshow.style.opacity = '1';
-		}, 2500);
+			headerHamburger();
+		}, 3000);
 	}
 
 	const submitButton = document.querySelector('.signup-button');
@@ -69,4 +80,6 @@ const frontpageSignupPopup = () => {
 		}
 	submitButton.addEventListener('click', signupSubmitForm)
 };
+
+headerHamburger();
 frontpageSignupPopup();
