@@ -42,11 +42,12 @@
 
 .yarn-img {
 	display: block;
+	width: 140%;
+	transform: translate(-15%, -10%);
 	object-fit: cover;
 }
 
 .yarn-img-container:hover {
-	opacity: 0.3;
 	cursor: pointer;
 	border: 1px solid black;
 }
@@ -66,15 +67,15 @@
 	/* font-size: var(--font-size-xsmall); */
 }
 
-/* li {
+.display-none {
+	display: none;
+}
+
+li {
 	display: flex;
 	justify-content: center;
-} */
+}
 
 .hover-title {
 	margin-bottom: var(--spacing-small-medium);
-}
-
-.hover-display-none {
-	display: none;
 }
