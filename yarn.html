@@ -41,26 +41,27 @@
 
 		<section class="display-center yarn-container">
 			<div class="filter-buttons-container">
-				<button class="filter-button">Wool</button>
-				<button class="filter-button">Alpaca</button>
-				<button class="filter-button">Linen</button>
-				<button class="filter-button">Cotton</button>
-				<button class="filter-button">Orange</button>
+				<button class="filter-button" data-filter-by="*">All</button>
+				<button class="filter-button" data-filter-by="wool">Wool</button>
+				<button class="filter-button" data-filter-by="alpaca">Alpaca</button>
+				<button class="filter-button" data-filter-by="linen">Linen</button>
+				<button class="filter-button" data-filter-by="cotton">Cotton</button>
+				<button class="filter-button" data-filter-by="cashmere">Cashmere</button>
 			</div>
 			<div class="filter-buttons-container">
-				<button class="filter-button">White</button>
-				<button class="filter-button">Pink</button>
-				<button class="filter-button">Blue</button>
-				<button class="filter-button">Green</button>
-				<button class="filter-button">Merino</button>
+				<button class="filter-button" data-filter-by="white">White</button>
+				<button class="filter-button" data-filter-by="pink">Pink</button>
+				<button class="filter-button" data-filter-by="blue">Blue</button>
+				<button class="filter-button" data-filter-by="green">Green</button>
+				<button class="filter-button" data-filter-by="orange">Orange</button>
 			</div>
 			<div class="filter-buttons-container">
 				<button class="sort-button">Price</button>
 				<button class="sort-button">Alphabetical</button>
 			</div>
 			<div class="display-center">
-				<div class="img-container">
-					<div class="yarn-img-container">
+				<div class="img-container list-items">
+					<div class="yarn-img-container list-item" data-type="wool">
 						<img class="yarn-img" src="assets/yarn-img/4tr_Spaelsaugarn_603.png" alt="">
 						<div class="hover-display display-none">
 							<ul>
@@ -71,7 +72,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="yarn-img-container">
+					<div class="yarn-img-container list-item" data-type="linen">
 						<img class="yarn-img" src="/assets/yarn-img/bomull_linPelini.png" alt="">
 						<div class="hover-display display-none">
 							<ul>
@@ -82,7 +83,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="yarn-img-container">
+					<div class="yarn-img-container list-item" data-type="alpaca,linen">
 						<img class="yarn-img" src="/assets/yarn-img/ALPAKKA-LIN_2511354_Oransje.png" alt="">
 						<div class="hover-display display-none">
 							<ul>
@@ -93,7 +94,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="yarn-img-container">
+					<div class="yarn-img-container list-item" data-type="alpaca">
 						<img class="yarn-img" src="/assets/yarn-img/alpakka_Iris_B126.png" alt="">
 						<div class="hover-display display-none">
 							<ul>
@@ -104,7 +105,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="yarn-img-container">
+					<div class="yarn-img-container list-item" data-type="cotton">
 						<img class="yarn-img" src="/assets/yarn-img/bomull_Helarsgarn_278.png" alt="">
 						<div class="hover-display display-none">
 							<ul>
@@ -115,18 +116,18 @@
 							</ul>
 						</div>
 					</div>
-					<div class="yarn-img-container">
+					<div class="yarn-img-container list-item" data-type="cashmere">
 						<img class="yarn-img" src="/assets/yarn-img/bomull_Petunia_264.png" alt="">
 						<div class="hover-display display-none">
 							<ul>
 								<li class="hover-title">Skinny</li>
-								<li>Thin wool</li>
+								<li>Thin cashmere</li>
 								<li>Color purple</li>
 								<li>55 NOK</li>
 							</ul>
 						</div>
 					</div>
-					<div class="yarn-img-container">
+					<div class="yarn-img-container list-item" data-type="cotton">
 						<img class="yarn-img" src="/assets/yarn-img/Gammelserie_400.png" alt="">
 						<div class="hover-display display-none">
 							<ul>
@@ -137,7 +138,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="yarn-img-container">
+					<div class="yarn-img-container list-item" data-type="cashmere">
 						<img class="yarn-img" src="/assets/yarn-img/lamull2.png" alt="">
 						<div class="hover-display display-none">
 							<ul>
@@ -148,7 +149,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="yarn-img-container">
+					<div class="yarn-img-container list-item" data-type="wool">
 						<img class="yarn-img" src="/assets/yarn-img/MITU-2830061.png" alt="">
 						<div class="hover-display display-none">
 							<ul>
@@ -159,7 +160,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="yarn-img-container">
+					<div class="yarn-img-container list-item" data-type="mohair">
 						<img class="yarn-img" src="/assets/yarn-img/mohair_Plum_069.png" alt="">
 						<div class="hover-display display-none">
 							<ul>
@@ -170,18 +171,18 @@
 							</ul>
 						</div>
 					</div>
-					<div class="yarn-img-container">
+					<div class="yarn-img-container list-item" data-type="mohair">
 						<img class="yarn-img" src="/assets/yarn-img/Pandora_251.png" alt="">
 						<div class="hover-display display-none">
 							<ul>
 								<li class="hover-title">Silk</li>
-								<li>Silk Merino</li>
+								<li>Silk mohair</li>
 								<li>Color pink</li>
 								<li>99 NOK</li>
 							</ul>
 						</div>
 					</div>
-					<div class="yarn-img-container">
+					<div class="yarn-img-container list-item" data-type="mohair">
 						<img class="yarn-img" src="/assets/yarn-img/TJUKK_MOHAIR-252314-Gronn.png" alt="">
 						<div class="hover-display display-none">
 							<ul>
@@ -192,7 +193,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="yarn-img-container">
+					<div class="yarn-img-container list-item" data-type="wool,linen">
 						<img class="yarn-img" src="/assets/yarn-img/PT5_590.png" alt="">
 						<div class="hover-display display-none">
 							<ul>
@@ -203,18 +204,18 @@
 							</ul>
 						</div>
 					</div>
-					<div class="yarn-img-container">
+					<div class="yarn-img-container list-item" data-type="mohair,cashmere">
 						<img class="yarn-img" src="/assets/yarn-img/tretraad.png" alt="">
 						<div class="hover-display display-none">
 							<ul>
 								<li class="hover-title">Silky Mohair</li>
-								<li>Mohair & linen</li>
+								<li>Mohair & cashmere</li>
 								<li>Color orange</li>
 								<li>115 NOK</li>
 							</ul>
 						</div>
 					</div>
-					<div class="yarn-img-container">
+					<div class="yarn-img-container list-item" data-type="mohair">
 						<img class="yarn-img" src="/assets/yarn-img/alpakka_Puno_388.png" alt="">
 						<div class="hover-display display-none">
 							<ul>
@@ -225,7 +226,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="yarn-img-container">
+					<div class="yarn-img-container list-item" data-type="linen">
 						<img class="yarn-img" src="/assets/yarn-img/vandre.png" alt="">
 						<div class="hover-display display-none">
 							<ul>
@@ -236,7 +237,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="yarn-img-container">
+					<div class="yarn-img-container list-item" data-type="wool">
 						<img class="yarn-img" src="/assets/yarn-img/TUMI-2116704.png" alt="">
 						<div class="hover-display display-none">
 							<ul>
@@ -247,7 +248,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="yarn-img-container">
+					<div class="yarn-img-container list-item" data-type="wool">
 						<img class="yarn-img" src="/assets/yarn-img/vams.png" alt="">
 						<div class="hover-display display-none">
 							<ul>
