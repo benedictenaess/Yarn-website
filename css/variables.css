@@ -18,8 +18,12 @@
 
 	--border-radius: 5px;
 
-	--spacing-small: 0.3rem;
+	--spacing-small: 0.5rem;
 	--spacing-medium: 1.5rem;
-	--spacing-large: 3rem;
-	--spacing-xlarge: 5rem;
+	--spacing-medium-large: 3rem;
+	--spacing-large: 6rem;
+	--spacing-xlarge: 10rem;
+	--spacing-xxlarge: 15rem;
+
+	--line-height: 1.6rem;
 }
