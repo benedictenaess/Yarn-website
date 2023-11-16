@@ -19,9 +19,7 @@ h2 {
 }
 
 .header-section {
-	/* position: absolute;
-	width: 100vw; */
-	/* height: 10vh; */
+	/* position: fixed; */
 	opacity: 1;
 	transition: 150ms ease-in;
 }
@@ -116,6 +114,41 @@ h2 {
 	opacity: 100%;
 }
 
+.up-grid {
+	width: 100vw;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+
+.up-container {
+	/* right: 10px;
+	bottom: 10px; */
+	grid-column: 11 / 12;
+	display: flex;
+	justify-content: center;
+}
+
+.up-button {
+	z-index: 60;
+	position: fixed;
+	bottom: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	background-color: var(--color-accent-4);
+	border: 1px solid black;
+}
+
+.display-none {
+	display: none;
+}
+
+.up-img {
+	width: 20px;
+}
+
 .form-section {
 	z-index: 10;
 	position: absolute;
@@ -188,7 +221,7 @@ h2 {
 	background-color: var(--color-accent-1);
 	margin-top: var(--spacing-medium);
 	padding: var(--spacing-small);
-	border: 2px solid black;
+	border: 1px solid black;
 }
 
 .signup-toast {
@@ -301,15 +334,15 @@ h2 {
 }
 
 .title-line {
-	margin: var(--spacing-xlarge);
+	margin: var(--spacing-large);
 	width: 60%;
 	border-bottom: 2px solid black;
 }
 
 .slideshow {
 	position: relative;
-	margin-top: var(--font-size-large);
-	margin-bottom: var(--font-size-large);
+	margin-top: var(--font-size-xlarge);
+	margin-bottom: var(--font-size-xlarge);
 	width: 100vw;
 	opacity: 1;
 	transition: 150ms ease-in;
@@ -372,4 +405,14 @@ h2 {
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	padding: var(--spacing-medium-large);
+}
+
+.slideshow-previous-button img {
+	width: 40px;
+	transform: rotate(270deg);
+}
+
+.slideshow-next-button img {
+	width: 40px;
+	transform: rotate(90deg);
 }
