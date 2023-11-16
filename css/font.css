@@ -1,0 +1,42 @@
+@font-face {
+	font-family: 'Inter Tight';
+	font-style: normal;
+	font-weight: 100;
+	src: url(https://fonts.gstatic.com/s/intertight/v7/NGSnv5HMAFg6IuGlBNMjxJEL2VmU3NS7Z2mjDw6aWy5UgqoUP_C5.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'inter tight';
+	font-style: normal;
+	font-weight: 200;
+	src: url(https://fonts.gstatic.com/s/intertight/v7/NGSnv5HMAFg6IuGlBNMjxJEL2VmU3NS7Z2mjjw-aWy5UgqoUP_C5.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'inter tight';
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/intertight/v7/NGSnv5HMAFg6IuGlBNMjxJEL2VmU3NS7Z2mjUQ-aWy5UgqoUP_C5.woff) format('woff');
+}
+
+@font-face {
+		font-family: 'inter tight';
+		font-style: normal;
+		font-weight: 400;
+		src: url(https://fonts.gstatic.com/s/intertight/v7/NGSnv5HMAFg6IuGlBNMjxJEL2VmU3NS7Z2mjDw-aWy5UgqoUP_C5.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Inter Tight';
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/intertight/v7/NGSnv5HMAFg6IuGlBNMjxJEL2VmU3NS7Z2mjPQ-aWy5UgqoUP_C5.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'inter tight';
+	font-style: normal;
+	font-weight: 600;
+	src: url(https://fonts.gstatic.com/s/intertight/v7/NGSnv5HMAFg6IuGlBNMjxJEL2VmU3NS7Z2mj0QiaWy5UgqoUP_C5.woff) format('woff');
+}
