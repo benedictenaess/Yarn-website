@@ -24,3 +24,41 @@ const hoverImg = () => {
 
 hoverImg();
 
+
+//filter
+
+const filterButtons = document.querySelectorAll('.filter-button');
+const listItems = document.querySelectorAll('.list-item'); 
+const listItemsContainer = document.querySelector('.list-items');
+
+const filterList = (event) => {
+	const currentButton = event.currentTarget; 								
+	const currentButtonFilterBy = currentButton.dataset.filterBy;   
+
+	const filteredItems = [...listItems].filter(item => {
+		if (currentButtonFilterBy === '*') {
+			return true;
+		} else {
+
+			const splitTypes = item.dataset.type.split(',');	
+			
+			return splitTypes.includes(currentButtonFilterBy);		
+		}
+	});
+
+  filterButtons.forEach(button => {
+    button.style.backgroundColor = '';
+  });
+
+  currentButton.style.backgroundColor = '#E25E3E';
+
+	listItemsContainer.innerHTML = '';
+	
+	filteredItems.forEach(item => {
+		listItemsContainer.appendChild(item);
+	});
+}
+
+filterButtons.forEach(filterButton => {
+	filterButton.addEventListener('click', filterList);
+});
