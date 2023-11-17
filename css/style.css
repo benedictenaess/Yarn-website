@@ -12,6 +12,11 @@ h2 {
 	font-weight: 200;
 }
 
+h3 {
+	font-size: var(--font-size-base);
+	font-weight: 200;
+}
+
 .display-center {
 	width: 100vw;
 	display: flex;
