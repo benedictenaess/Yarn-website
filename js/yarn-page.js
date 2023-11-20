@@ -30,10 +30,16 @@ hoverImg();
 const filterButtons = document.querySelectorAll('.filter-button');
 const listItems = document.querySelectorAll('.list-item'); 
 const listItemsContainer = document.querySelector('.list-items');
+const sortButtons = document.querySelectorAll('.sort-button');
+
+let currentFilter = '*';
+let direction = -1;
 
 const filterList = (event) => {
 	const currentButton = event.currentTarget; 								
 	const currentButtonFilterBy = currentButton.dataset.filterBy;   
+
+    currentFilter = currentButtonFilterBy;
 
 	const filteredItems = [...listItems].filter(item => {
 		if (currentButtonFilterBy === '*') {
@@ -41,7 +47,6 @@ const filterList = (event) => {
 		} else {
 
 			const splitTypes = item.dataset.type.split(',');	
-			
 			return splitTypes.includes(currentButtonFilterBy);		
 		}
 	});
@@ -50,22 +55,22 @@ const filterList = (event) => {
         button.style.backgroundColor = '';
     });
 
+    if (currentButtonFilterBy === '*') {
+        sortButtons.forEach(button => {
+            button.style.backgroundColor = '';
+        });
+    }
+
     currentButton.style.backgroundColor = '#E25E3E';
 
-	listItemsContainer.textContent = '';
-	
-	filteredItems.forEach(item => {
-		listItemsContainer.appendChild(item);
-	});
+    sortAndRenderList(filteredItems);
+
 }
 
 filterButtons.forEach(filterButton => {
 	filterButton.addEventListener('click', filterList);
 });
 
-const sortButtons = document.querySelectorAll('.sort-button')
-
-let direction = -1;
 
 const sortList = (event) => {
     const currentButton = event.currentTarget;
@@ -76,38 +81,49 @@ const sortList = (event) => {
         direction = 1;
     }
 
-    if (currentButton.dataset.sortBy === 'name'){
+    const sortBy = currentButton.dataset.sortBy;
+
     const sortedItems = [...listItems].sort((a, b) => {
-  
+        if (sortBy === 'name') {
+            
         const order = (a.dataset.name > b.dataset.name) ? 1 : -1;
-  
         return order * direction;
-    });
+
+        } else if (sortBy === 'price') {
+                const aAsNumber = parseInt(a.dataset.price);
+                const bAsNumber = parseInt(b.dataset.price);
     
-    listItemsContainer.textContent = '';
- 
-    sortedItems.forEach(item => {
-        listItemsContainer.appendChild(item);
+                const order = (aAsNumber > bAsNumber) ? 1 : -1;
+                return order * direction; 
+        }
+
+    });
+    sortButtons.forEach(button => {
+        button.style.backgroundColor = '';
     });
 
-    } else if (currentButton.dataset.sortBy === 'price'){
-        const sortedItems = [...listItems].sort((a, b) => {
-            const aAsNumber = parseInt(a.dataset.price);
-            const bAsNumber = parseInt(b.dataset.price);
-
-            const order = (aAsNumber > bAsNumber) ? 1 : -1;
-
-            return order * direction; 
-        });
-
-        listItemsContainer.textContent = '';
+    currentButton.style.backgroundColor = '#E25E3E';
     
-        sortedItems.forEach(item => {
-            listItemsContainer.appendChild(item);
-        });
-    }
-}
+    sortAndRenderList(sortedItems);
+}   
 
 sortButtons.forEach(sortButton => {
   sortButton.addEventListener('click', sortList);
 });
+
+function sortAndRenderList(items) {
+    const filteredAndSortedItems = items.filter(item => {
+        if (currentFilter === '*') {
+            return true;
+        } else {
+            const splitTypes = item.dataset.type.split(',');
+            return splitTypes.includes(currentFilter);
+        }
+    });
+
+    listItemsContainer.textContent = '';
+
+    filteredAndSortedItems.forEach(item => {
+        listItemsContainer.appendChild(item);
+    })
+}
