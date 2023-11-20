@@ -17,6 +17,10 @@ h3 {
 	font-weight: 200;
 }
 
+.display-none {
+	display: none;
+}
+
 .display-center {
 	width: 100vw;
 	display: flex;
@@ -30,9 +34,9 @@ h3 {
 }
 
 .header-container {
-	position: sticky;
+	position: relative;
 	top: 0;
-	z-index: 1;
+	z-index: 2;
 	background-color: white;
 	border-bottom: 1px solid black;
 	width: 100vw;
@@ -68,6 +72,7 @@ h3 {
 }
 
 .button-cart {
+	transform: rotateY(3.142rad);
 	grid-column-start: 10;
 	grid-column-end: 11;
 }
@@ -100,11 +105,12 @@ h3 {
 }
 
 .active-menu-container {
-	position: relative;
 	z-index: 0;
+	position: relative;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+	width: 100vw;
 	height: 50px;
 	background-color: var(--color-accent-1);
 	transform: translateX(0);
@@ -117,6 +123,16 @@ h3 {
 
 .active-menu-button:hover {
 	opacity: 100%;
+}
+
+.cart-container {
+	position: absolute;
+	top: -50px;
+	right: 0px;
+	z-index: 1;
+	background: var(--color-accent-1);
+	height: 300px;
+	width: 400px;
 }
 
 .up-grid {
