@@ -7,18 +7,26 @@ const headerActive = document.querySelector('.active-menu');
 const openMenu = ()=>{
 	hamburgerButton.addEventListener('click', ()=>{
 		headerActive.classList.toggle('active-menu-hide');
+		cartContainer.classList.add('active-cart-hide');
 	})
 }
 
 openMenu();
 
-// const toggleMenu = () => {
-//     headerActive.classList.toggle('active-menu-hide');
-// };
+// cart container
 
-// const openMenu = () => {
-//     hamburgerButton.addEventListener('click', toggleMenu);
-// };
+const cartHeaderIcon = document.querySelector('.button-cart');
+const cartContainer = document.querySelector('.cart-container');
+
+const openCart = () => {
+	
+	cartHeaderIcon.addEventListener('click', () => {
+		cartContainer.classList.toggle('active-cart-hide');
+		headerActive.classList.add('active-menu-hide');
+	});
+}
+
+openCart();
 
 //header buttons
 
@@ -88,14 +96,13 @@ const frontpageSignupPopup = () => {
 	const signupToastPopup = () => {
 		signupToast.style.display = 'block'
 		signupText.textContent = `Welcome ${firstName.value} ${lastName.value} to the gang!`
-		signupToast.classList.add('signup-toast-animation')
+		signupToast.classList.add('signup-toast-animation');
 		setTimeout(() => {
 			signupToast.remove();
 			frontpageHeader.style.opacity = '1';
 			frontpagePhotos.style.opacity = '1';
 			frontpageTitle.style.opacity = '1';
 			frontpageSlideshow.style.opacity = '1';
-			// openMenu();
 		}, 3000);
 	}
 
@@ -110,7 +117,6 @@ const frontpageSignupPopup = () => {
 	submitButton.addEventListener('click', signupSubmitForm)
 };
 
-// openMenu();
 frontpageSignupPopup();
 
 //Slideshow
@@ -155,5 +161,3 @@ const scrollSlideshow = ()=>{
 }
 
 scrollSlideshow();
-
-
