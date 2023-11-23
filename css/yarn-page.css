@@ -49,6 +49,7 @@
 
 .yarn-img-container:hover {
 	cursor: pointer;
+	box-shadow: 3px 3px 1px rgba(146, 146, 146, 0.42);
 }
 
 .hover-display {
@@ -106,7 +107,6 @@
 	}
 }
 
-
 .display-none {
 	display: none;
 }
@@ -116,13 +116,11 @@ li {
 	justify-content: center;
 }
 
-
-
 .hover-title {
 	margin-bottom: var(--spacing-small-medium);
 }
 
 .yarn-container button:hover {
-	opacity: 0.5;
 	background-color: var(--color-accent-1);
+	box-shadow: 3px 3px 1px rgba(146, 146, 146, 0.42);
 }
