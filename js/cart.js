@@ -116,7 +116,7 @@ const addQuantity = (itemTitle) => {
 }
 
 const addItemToCart = (itemTitle, itemPrice, itemImg) => {
-
+    
     const cartItems = document.querySelector('.cart-items');
 
     const existingCartItem = [...document.querySelectorAll('.cart-item-title')].find((cartItem) => cartItem.innerText.toLowerCase() === itemTitle.toLowerCase()
@@ -188,10 +188,8 @@ addToCartButton.forEach(addToCartButton => {
 });
 
 
-
-
 const updateCartTotal = () => {
-    const cartItemsContainer = document.querySelector('.cart-items');
+    // const cartItemsContainer = document.querySelector('.cart-items');
     const cartRows = document.querySelectorAll('.cart-row');
     let total = 0;
 
@@ -222,6 +220,24 @@ const removeCartItem = (event) => {
     updateCartTotal();
 }
 
+const purchaseClick = () => {
+    const cartItems = document.querySelector('.cart-items');
+
+    while (cartItems.firstChild) {
+        cartItems.removeChild(cartItems.firstChild);
+    }
+
+    cartItems.innerText = 'Thank your for shopping with us!'
+    updateCartTotal();  
+
+    setTimeout(() => {
+        cartItems.innerText = '';
+        const cartContainer = document.querySelector('.cart-container');
+        cartContainer.classList.add('active-cart-hide');
+
+    }, 2000);
+}
+
 
 const ready = () => {
     const removeCartItemBtns = document.querySelectorAll('.remove-button');
@@ -233,6 +249,9 @@ const ready = () => {
     quantityInputs.forEach(quantityInput => {
         quantityInput.addEventListener('change', quantityChanged);
     });
+
+    const PurchaseButton = document.querySelector('.purchase-button');
+    PurchaseButton.addEventListener('click', purchaseClick)
  }
 
  if (document.readyState === 'loading') {
