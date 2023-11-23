@@ -20,6 +20,7 @@
 				<img src="assets/icons/search-outline.svg" alt="Search icon">
 			</button>
 			<button class="header-container-button button-cart">
+				<div class="cart-add-count"></div>
 				<img src="assets/icons/cart-outline.svg" alt="">
 			</button>
 			<button class="header-container-button button-hamburger">
@@ -36,9 +37,38 @@
 
 		<div class="cart">
 			<div class="cart-container active-cart-show active-cart-hide">
-				<ul class="cart-container-list cart-item">
+				<!-- <ul class="cart-container-list">
 				</ul>
-				<div class="total-price cart-item">Total 0 nok</div>
+				<div class="total-price">Total 0 nok</div> -->
+				<div class="cart-items">
+					<!-- <div class="cart-row">
+						<div class="cart-item cart-column">
+							<img class="cart-item-img" src="assets/yarn-img/ALPAKKA-LIN_2511354_Oransje.png" alt="">
+							<span class="cart-item-title">Aurora</span>
+						</div>
+						<span class="cart-price cart-column">105 NOK</span>
+						<div class="cart-quantity cart-column">
+							<input class="cart-quantity-input" type="number" value="1">
+							<button class="remove-button">Remove</button>
+						</div>
+					</div>
+					<div class="cart-row">
+						<div class="cart-item cart-column">
+							<img class="cart-item-img" src="assets/yarn-img/ALPAKKA-LIN_2511354_Oransje.png" alt="">
+							<span class="cart-item-title">Aurora</span>
+						</div>
+						<span class="cart-price cart-column">105 NOK</span>
+						<div class="cart-quantity cart-column">
+							<input class="cart-quantity-input" type="number" value="1">
+							<button class="remove-button">Remove</button>
+						</div>
+					</div> -->
+				</div>
+				<div class="cart-total">
+					<span class="cart-total-title">Total</span>
+					<span class="cart-total-price">0 NOK</span>
+					<button class="purchase-button">Purchase</button>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -75,9 +105,9 @@
 								<li class="hover-title">Smooth linen</li>
 								<li>100% Linen</li>
 								<li>Color Pink</li>
-								<li>79 NOK</li>
+								<li class="item-price">79 NOK</li>
 							</ul>
-							<button>
+							<button class="add-to-cart-button">
 								<img class src="/assets/icons/cart-outline.svg" alt="">
 							</button>
 							<div class="add-to-cart-display display-none">
@@ -93,9 +123,9 @@
 								<li class="hover-title">Aurora</li>
 								<li>Alpaca & Linen</li>
 								<li>Color orange</li>
-								<li>105 NOK</li>
+								<li class="item-price">105 NOK</li>
 							</ul>
-							<button>
+							<button class="add-to-cart-button">
 								<img class src="/assets/icons/cart-outline.svg" alt="">
 							</button>
 							<div class="add-to-cart-display display-none">
@@ -111,9 +141,9 @@
 								<li class="hover-title">Fluff</li>
 								<li>Fluffy alpaca</li>
 								<li>Color blue</li>
-								<li>95 NOK</li>
+								<li class="item-price">95 NOK</li>
 							</ul>
-							<button>
+							<button class="add-to-cart-button">
 								<img class src="/assets/icons/cart-outline.svg" alt="">
 							</button>
 							<div class="add-to-cart-display display-none">
@@ -129,9 +159,9 @@
 								<li class="hover-title">Harmony</li>
 								<li>100% Cotton</li>
 								<li>Color orange</li>
-								<li>65 NOK</li>
+								<li class="item-price">65 NOK</li>
 							</ul>
-							<button>
+							<button class="add-to-cart-button">
 								<img class src="/assets/icons/cart-outline.svg" alt="">
 							</button>
 							<div class="add-to-cart-display display-none">
@@ -147,9 +177,9 @@
 								<li class="hover-title">Spring</li>
 								<li>Thin cotton</li>
 								<li>Color purple</li>
-								<li>55 NOK</li>
+								<li class="item-price">55 NOK</li>
 							</ul>
-							<button>
+							<button class="add-to-cart-button">
 								<img class src="/assets/icons/cart-outline.svg" alt="">
 							</button>
 							<div class="add-to-cart-display display-none">
@@ -165,9 +195,9 @@
 								<li class="hover-title">Bluebird</li>
 								<li>100% Cotton</li>
 								<li>Color white</li>
-								<li>52 NOK</li>
+								<li class="item-price">52 NOK</li>
 							</ul>
-							<button>
+							<button class="add-to-cart-button">
 								<img class src="/assets/icons/cart-outline.svg" alt="">
 							</button>
 							<div class="add-to-cart-display display-none">
@@ -183,9 +213,9 @@
 								<li class="hover-title">Norwegian wool</li>
 								<li>100% wool</li>
 								<li>Color grey</li>
-								<li>75 NOK</li>
+								<li class="item-price">75 NOK</li>
 							</ul>
-							<button>
+							<button class="add-to-cart-button">
 								<img class src="/assets/icons/cart-outline.svg" alt="">
 							</button>
 							<div class="add-to-cart-display display-none">
@@ -201,9 +231,9 @@
 								<li class="hover-title">Cashmere</li>
 								<li>Cashmere wool</li>
 								<li>Color pink</li>
-								<li>129 NOK</li>
+								<li class="item-price"> 129 NOK</li>
 							</ul>
-							<button>
+							<button class="add-to-cart-button">
 								<img class src="/assets/icons/cart-outline.svg" alt="">
 							</button>
 							<div class="add-to-cart-display display-none">
@@ -219,9 +249,9 @@
 								<li class="hover-title">Iris</li>
 								<li>Merino wool</li>
 								<li>Color green</li>
-								<li>62 NOK</li>
+								<li class="item-price">62 NOK</li>
 							</ul>
-							<button>
+							<button class="add-to-cart-button">
 								<img class src="/assets/icons/cart-outline.svg" alt="">
 							</button>
 							<div class="add-to-cart-display display-none">
@@ -237,9 +267,9 @@
 								<li class="hover-title">Plum</li>
 								<li>Mohair</li>
 								<li>Color white</li>
-								<li>99 NOK</li>
+								<li class="item-price">99 NOK</li>
 							</ul>
-							<button>
+							<button class="add-to-cart-button">
 								<img class src="/assets/icons/cart-outline.svg" alt="">
 							</button>
 							<div class="add-to-cart-display display-none">
@@ -255,9 +285,9 @@
 								<li class="hover-title">Silk</li>
 								<li>Silk mohair</li>
 								<li>Color pink</li>
-								<li>99 NOK</li>
+								<li class="item-price">99 NOK</li>
 							</ul>
-							<button>
+							<button class="add-to-cart-button">
 								<img class src="/assets/icons/cart-outline.svg" alt="">
 							</button>
 							<div class="add-to-cart-display display-none">
@@ -273,9 +303,9 @@
 								<li class="hover-title">Velvet</li>
 								<li>Mohair</li>
 								<li>Color green</li>
-								<li>75 NOK</li>
+								<li class="item-price">75 NOK</li>
 							</ul>
-							<button>
+							<button class="add-to-cart-button">
 								<img class src="/assets/icons/cart-outline.svg" alt="">
 							</button>
 							<div class="add-to-cart-display display-none">
@@ -291,9 +321,9 @@
 								<li class="hover-title">Linen mix</li>
 								<li>Wool & Linen</li>
 								<li>Color green</li>
-								<li>99 NOK</li>
+								<li class="item-price">99 NOK</li>
 							</ul>
-							<button>
+							<button class="add-to-cart-button">
 								<img class src="/assets/icons/cart-outline.svg" alt="">
 							</button>
 							<div class="add-to-cart-display display-none">
@@ -309,9 +339,9 @@
 								<li class="hover-title">Silky Mohair</li>
 								<li>Mohair & alpaca</li>
 								<li>Color orange</li>
-								<li>115 NOK</li>
+								<li class="item-price">115 NOK</li>
 							</ul>
-							<button>
+							<button class="add-to-cart-button">
 								<img class src="/assets/icons/cart-outline.svg" alt="">
 							</button>
 							<div class="add-to-cart-display display-none">
@@ -327,9 +357,9 @@
 								<li class="hover-title">Chuncky Mohair</li>
 								<li>Chuncky alpaca</li>
 								<li>Color blue</li>
-								<li>87 NOK</li>
+								<li class="item-price">87 NOK</li>
 							</ul>
-							<button>
+							<button class="add-to-cart-button">
 								<img class src="/assets/icons/cart-outline.svg" alt="">
 							</button>
 							<div class="add-to-cart-display display-none">
@@ -345,9 +375,9 @@
 								<li class="hover-title">Summer</li>
 								<li>100% linen</li>
 								<li>Color blue</li>
-								<li>55 NOK</li>
+								<li class="item-price">55 NOK</li>
 							</ul>
-							<button>
+							<button class="add-to-cart-button">
 								<img class src="/assets/icons/cart-outline.svg" alt="">
 							</button>
 							<div class="add-to-cart-display display-none">
@@ -363,9 +393,9 @@
 								<li class="hover-title">Islandic</li>
 								<li>Islandic wool</li>
 								<li>Color orange</li>
-								<li>49 NOK</li>
+								<li class="item-price">49 NOK</li>
 							</ul>
-							<button>
+							<button class="add-to-cart-button">
 								<img class src="/assets/icons/cart-outline.svg" alt="">
 							</button>
 							<div class="add-to-cart-display display-none">
@@ -381,9 +411,9 @@
 								<li class="hover-title">Danish</li>
 								<li>Danish wool</li>
 								<li>Color white</li>
-								<li>55 NOK</li>
+								<li class="item-price">55 NOK</li>
 							</ul>
-							<button>
+							<button class="add-to-cart-button">
 								<img class src="/assets/icons/cart-outline.svg" alt="">
 							</button>
 							<div class="add-to-cart-display display-none">
