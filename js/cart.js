@@ -3,6 +3,20 @@
 
 const yarnCarts = document.querySelectorAll('.hover-display button');
 const addToCartDisplays = document.querySelectorAll('.add-to-cart-display');
+let clickCount = 0;
+const cartCounter = document.querySelector('.cart-add-count');
+
+function updateCartCounter() {
+    
+    clickCount ++;
+
+    cartCounter.textContent = clickCount;
+    cartCounter.classList.add('cart-animation');
+    
+    cartCounter.addEventListener('animationend', function() {
+        cartCounter.classList.remove('cart-animation');
+    }, { once: true });
+}
 
 
 const addToCartIconDisplay = (index) => {
@@ -10,86 +24,18 @@ const addToCartIconDisplay = (index) => {
     
     activeTimeout = setTimeout(() => {
         addToCartDisplays[index].classList.add('display-none');
-    }, 400);             
-}
+    }, 400);   
+
+}         
 
 yarnCarts.forEach((yarnCart, index) => {
     yarnCart.addEventListener('click', () => {
         addToCartIconDisplay(index);
-        addToCart(event);
+        updateCartCounter(); 
     });
 });
 
 
-//cart add
-
-
-// const totalPriceElement = document.querySelector('.total-price');
-// const cartItemsList = document.querySelector('.cart-container-list');
-// let totalPrice = 0;
-// let totalItems = 0;
-// const cartItems = {};
-
-// function addToCart(event) {
-
-//     const datasetContainer = event.currentTarget.closest('.yarn-img-container');
-
-//     const itemName = datasetContainer.dataset.name;
-//     const itemPrice = parseFloat(datasetContainer.dataset.price);
-
-
-//     if (cartItems[itemName]) {
-
-//         cartItems[itemName].quantity += 1;
-//         cartItems[itemName].element.textContent = `${itemName} - ${itemPrice.toFixed(2)} NOK x ${cartItems[itemName].quantity}`;
-//     } else {
- 
-//         const cartItem = document.createElement('li');
-//         const yarnImg = datasetContainer.querySelector('.yarn-img').cloneNode(true);
-
-//         cartItem.textContent = `${itemName} - ${itemPrice.toFixed(2)} NOK x 1`;
-
-//         cartItemsList.appendChild(cartItem);
-//         cartItem.classList.add('cart-item');
-
-        
-//         cartItem.appendChild(yarnImg);
-//         yarnImg.style.width = '50px';
-
-//         cartItems[itemName] = {
-//             element: cartItem,
-//             quantity: 1,
-//             price: itemPrice,
-//         };
-//     }
-    
-//     totalPrice += itemPrice;
-//     totalItems += 1;
-//     updateCartCounter();
-//     totalPriceElement.textContent = `Total ${calculateTotalPrice().toFixed(2)}`;
-// }
-
-// function calculateTotalPrice() {
-//     let total = 0;
-//     for (const itemName in cartItems) {
-//         const item = cartItems[itemName];
-//         total += item.quantity * item.price;
-//     }
-//     return total;
-// }
-
-
-function updateCartCounter() {
-    const cartCounter = document.querySelector('.cart-add-count');
-
-    cartCounter.classList.add('cart-animation');
-
-    cartCounter.textContent = totalItems;
-
-    cartCounter.addEventListener('animationend', function() {
-        cartCounter.classList.remove('cart-animation');
-    }, { once: true });
-}
 
 /////////////////////////
 
@@ -101,7 +47,7 @@ const addQuantity = (itemTitle) => {
 
     for (let i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText === itemTitle) {
-            quantityCount += 1
+            quantityCount += 1;
 
             const cartQuantityInput = cartItemNames[i].closest('.cart-row').querySelector('.cart-quantity-input');
 
@@ -220,7 +166,7 @@ const removeCartItem = (event) => {
     updateCartTotal();
 }
 
-const purchaseClick = () => {
+function purchaseClick () {
     const cartItems = document.querySelector('.cart-items');
 
     while (cartItems.firstChild) {
@@ -234,6 +180,8 @@ const purchaseClick = () => {
         cartItems.innerText = '';
         const cartContainer = document.querySelector('.cart-container');
         cartContainer.classList.add('active-cart-hide');
+        clickCount = 0;
+        cartCounter.textContent = '';
 
     }, 2000);
 }
@@ -250,8 +198,8 @@ const ready = () => {
         quantityInput.addEventListener('change', quantityChanged);
     });
 
-    const PurchaseButton = document.querySelector('.purchase-button');
-    PurchaseButton.addEventListener('click', purchaseClick)
+    const purchaseButton = document.querySelector('.purchase-button');
+    purchaseButton.addEventListener('click', purchaseClick);
  }
 
  if (document.readyState === 'loading') {
