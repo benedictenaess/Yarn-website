@@ -4,9 +4,9 @@ const upButton = document.querySelector('.up-button');
 
 window.addEventListener('scroll', () => {
 	if (window.scrollY >= 400) {
-		upButton.classList.remove('display-none');
+		upButton.classList.remove('display-none-scroll');
 	} else {
-		upButton.classList.add('display-none');
+		upButton.classList.add('display-none-scroll');
 	}
 });
 
