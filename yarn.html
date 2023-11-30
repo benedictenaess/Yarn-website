@@ -17,11 +17,12 @@
 				<img src="assets/Logo.svg" alt="Logo">
 			</button>
 			<button class="header-container-button button-search">
-				<img src="assets/icons/search-outline.svg" alt="Search icon">
+				<img class="header-search-icon" src="assets/icons/search-outline.svg" alt="Search icon">
+				<input class="header-search-input" type="text">
 			</button>
 			<button class="header-container-button button-cart">
 				<div class="cart-add-count"></div>
-				<img src="assets/icons/cart-outline.svg" alt="">
+				<img src="assets/icons/cart-outline.svg" alt="cart icon">
 			</button>
 			<button class="header-container-button button-hamburger">
 				<img src="assets/icons/hamburger.svg" alt="Hamburger icon">
@@ -29,17 +30,14 @@
 		</div>
 		<div class="active-menu active-menu-hide active-menu-show">
 			<div class="active-menu-container">
+				<button class="active-menu-button home-button">Home</button>
 				<button class="active-menu-button yarn-button">Yarn</button>
-				<button class="active-menu-button pattern-button">Patterns</button>
 				<button class="active-menu-button about-button">About us</button>
 			</div>
 		</div>
 
 		<div class="cart">
 			<div class="cart-container active-cart-show active-cart-hide">
-				<!-- <ul class="cart-container-list">
-				</ul>
-				<div class="total-price">Total 0 nok</div> -->
 				<div class="cart-items">
 					<!-- <div class="cart-row">
 						<div class="cart-item cart-column">
@@ -99,7 +97,7 @@
 			<div class="display-center">
 				<div class="img-container list-items">
 					<div class="yarn-img-container list-item" data-price="79" data-name="smooth" data-type="linen,pink">
-						<img class="yarn-img" src="/assets/yarn-img/bomull_linPelini.png" alt="">
+						<img class="yarn-img" src="/assets/yarn-img/bomull_linPelini.png" alt="pink linen yarn">
 						<div class="hover-display display-none">
 							<ul>
 								<li class="hover-title">Smooth linen</li>
@@ -108,16 +106,16 @@
 								<li class="item-price">79 NOK</li>
 							</ul>
 							<button class="add-to-cart-button">
-								<img class src="/assets/icons/cart-outline.svg" alt="">
+								<img class src="/assets/icons/cart-outline.svg" alt="add to cart icon">
 							</button>
 							<div class="add-to-cart-display display-none">
-								<img src="/assets/icons/cart.svg" alt="">
-								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="">
+								<img src="/assets/icons/cart.svg" alt="add to cart icon">
+								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="checked">
 							</div>
 						</div>
 					</div>
 					<div class="yarn-img-container list-item" data-price="105" data-name="aurora" data-type="alpaca,linen,orange">
-						<img class="yarn-img" src="/assets/yarn-img/ALPAKKA-LIN_2511354_Oransje.png" alt="">
+						<img class="yarn-img" src="/assets/yarn-img/ALPAKKA-LIN_2511354_Oransje.png" alt="orange alpaca yarn">
 						<div class="hover-display display-none">
 							<ul>
 								<li class="hover-title">Aurora</li>
@@ -126,16 +124,16 @@
 								<li class="item-price">105 NOK</li>
 							</ul>
 							<button class="add-to-cart-button">
-								<img class src="/assets/icons/cart-outline.svg" alt="">
+								<img class src="/assets/icons/cart-outline.svg" alt="add to cart icon">
 							</button>
 							<div class="add-to-cart-display display-none">
-								<img src="/assets/icons/cart.svg" alt="">
-								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="">
+								<img src="/assets/icons/cart.svg" alt="add to cart icon">
+								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="checked">
 							</div>
 						</div>
 					</div>
 					<div class="yarn-img-container list-item" data-price="95" data-name="fluff" data-type="alpaca,blue">
-						<img class="yarn-img" src="/assets/yarn-img/alpakka_Iris_B126.png" alt="">
+						<img class="yarn-img" src="/assets/yarn-img/alpakka_Iris_B126.png" alt="blue alpaca yarn">
 						<div class="hover-display display-none">
 							<ul>
 								<li class="hover-title">Fluff</li>
@@ -144,16 +142,16 @@
 								<li class="item-price">95 NOK</li>
 							</ul>
 							<button class="add-to-cart-button">
-								<img class src="/assets/icons/cart-outline.svg" alt="">
+								<img class src="/assets/icons/cart-outline.svg" alt="add to cart icon">
 							</button>
 							<div class="add-to-cart-display display-none">
-								<img src="/assets/icons/cart.svg" alt="">
-								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="">
+								<img src="/assets/icons/cart.svg" alt="add to cart icon">
+								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="checked">
 							</div>
 						</div>
 					</div>
 					<div class="yarn-img-container list-item" data-price="65" data-name="harmony" data-type="cotton,orange">
-						<img class="yarn-img" src="/assets/yarn-img/bomull_Helarsgarn_278.png" alt="">
+						<img class="yarn-img" src="/assets/yarn-img/bomull_Helarsgarn_278.png" alt="orange cotten yarn">
 						<div class="hover-display display-none">
 							<ul>
 								<li class="hover-title">Harmony</li>
@@ -162,16 +160,16 @@
 								<li class="item-price">65 NOK</li>
 							</ul>
 							<button class="add-to-cart-button">
-								<img class src="/assets/icons/cart-outline.svg" alt="">
+								<img class src="/assets/icons/cart-outline.svg" alt="add to cart icon">
 							</button>
 							<div class="add-to-cart-display display-none">
-								<img src="/assets/icons/cart.svg" alt="">
-								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="">
+								<img src="/assets/icons/cart.svg" alt="add to cart icon">
+								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="checked">
 							</div>
 						</div>
 					</div>
 					<div class="yarn-img-container list-item" data-price="55" data-name="spring" data-type="cotton,purple">
-						<img class="yarn-img" src="/assets/yarn-img/bomull_Petunia_264.png" alt="">
+						<img class="yarn-img" src="/assets/yarn-img/bomull_Petunia_264.png" alt="purple cotton yarn">
 						<div class="hover-display display-none">
 							<ul>
 								<li class="hover-title">Spring</li>
@@ -180,16 +178,16 @@
 								<li class="item-price">55 NOK</li>
 							</ul>
 							<button class="add-to-cart-button">
-								<img class src="/assets/icons/cart-outline.svg" alt="">
+								<img class src="/assets/icons/cart-outline.svg" alt="add to cart icon">
 							</button>
 							<div class="add-to-cart-display display-none">
-								<img src="/assets/icons/cart.svg" alt="">
-								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="">
+								<img src="/assets/icons/cart.svg" alt="add to cart icon">
+								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="checked">
 							</div>
 						</div>
 					</div>
 					<div class="yarn-img-container list-item" data-price="52" data-name="bluebird" data-type="cotton,white">
-						<img class="yarn-img" src="/assets/yarn-img/Gammelserie_400.png" alt="">
+						<img class="yarn-img" src="/assets/yarn-img/Gammelserie_400.png" alt="white cotton yarn">
 						<div class="hover-display display-none">
 							<ul>
 								<li class="hover-title">Bluebird</li>
@@ -198,16 +196,16 @@
 								<li class="item-price">52 NOK</li>
 							</ul>
 							<button class="add-to-cart-button">
-								<img class src="/assets/icons/cart-outline.svg" alt="">
+								<img class src="/assets/icons/cart-outline.svg" alt="add to cart icon">
 							</button>
 							<div class="add-to-cart-display display-none">
-								<img src="/assets/icons/cart.svg" alt="">
-								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="">
+								<img src="/assets/icons/cart.svg" alt="add to cart icon">
+								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="checked">
 							</div>
 						</div>
 					</div>
 					<div class="yarn-img-container list-item" data-price="75" data-name="norwegian" data-type="wool,white">
-						<img class="yarn-img" src="assets/yarn-img/4tr_Spaelsaugarn_603.png" alt="">
+						<img class="yarn-img" src="assets/yarn-img/4tr_Spaelsaugarn_603.png" alt="white wool yarn">
 						<div class="hover-display display-none">
 							<ul>
 								<li class="hover-title">Norwegian wool</li>
@@ -216,16 +214,16 @@
 								<li class="item-price">75 NOK</li>
 							</ul>
 							<button class="add-to-cart-button">
-								<img class src="/assets/icons/cart-outline.svg" alt="">
+								<img class src="/assets/icons/cart-outline.svg" alt="add to cart icon">
 							</button>
 							<div class="add-to-cart-display display-none">
-								<img src="/assets/icons/cart.svg" alt="">
-								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="">
+								<img src="/assets/icons/cart.svg" alt="add to cart icon">
+								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="checked">
 							</div>
 						</div>
 					</div>
 					<div class="yarn-img-container list-item" data-price="129" data-name="cashmere" data-type="wool,pink">
-						<img class="yarn-img" src="/assets/yarn-img/lamull2.png" alt="">
+						<img class="yarn-img" src="/assets/yarn-img/lamull2.png" alt="pink wool yarn">
 						<div class="hover-display display-none">
 							<ul>
 								<li class="hover-title">Cashmere</li>
@@ -234,16 +232,16 @@
 								<li class="item-price"> 129 NOK</li>
 							</ul>
 							<button class="add-to-cart-button">
-								<img class src="/assets/icons/cart-outline.svg" alt="">
+								<img class src="/assets/icons/cart-outline.svg" alt="add to cart icon">
 							</button>
 							<div class="add-to-cart-display display-none">
-								<img src="/assets/icons/cart.svg" alt="">
-								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="">
+								<img src="/assets/icons/cart.svg" alt="add to cart icon">
+								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="checked">
 							</div>
 						</div>
 					</div>
 					<div class="yarn-img-container list-item" data-price="62" data-name="iris" data-type="wool,green">
-						<img class="yarn-img" src="/assets/yarn-img/MITU-2830061.png" alt="">
+						<img class="yarn-img" src="/assets/yarn-img/MITU-2830061.png" alt="green wool yarn">
 						<div class="hover-display display-none">
 							<ul>
 								<li class="hover-title">Iris</li>
@@ -252,16 +250,16 @@
 								<li class="item-price">62 NOK</li>
 							</ul>
 							<button class="add-to-cart-button">
-								<img class src="/assets/icons/cart-outline.svg" alt="">
+								<img class src="/assets/icons/cart-outline.svg" alt="add to cart icon">
 							</button>
 							<div class="add-to-cart-display display-none">
-								<img src="/assets/icons/cart.svg" alt="">
-								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="">
+								<img src="/assets/icons/cart.svg" alt="add to cart icon">
+								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="checked">
 							</div>
 						</div>
 					</div>
 					<div class="yarn-img-container list-item" data-price="99" data-name="plum" data-type="mohair,white">
-						<img class="yarn-img" src="/assets/yarn-img/mohair_Plum_069.png" alt="">
+						<img class="yarn-img" src="/assets/yarn-img/mohair_Plum_069.png" alt="white mohair yarn">
 						<div class="hover-display display-none">
 							<ul>
 								<li class="hover-title">Plum</li>
@@ -270,16 +268,16 @@
 								<li class="item-price">99 NOK</li>
 							</ul>
 							<button class="add-to-cart-button">
-								<img class src="/assets/icons/cart-outline.svg" alt="">
+								<img class src="/assets/icons/cart-outline.svg" alt="add to cart icon">
 							</button>
 							<div class="add-to-cart-display display-none">
-								<img src="/assets/icons/cart.svg" alt="">
-								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="">
+								<img src="/assets/icons/cart.svg" alt="add to cart icon">
+								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="checked">
 							</div>
 						</div>
 					</div>
 					<div class="yarn-img-container list-item" data-price="99" data-name="silk" data-type="mohair,pink">
-						<img class="yarn-img" src="/assets/yarn-img/Pandora_251.png" alt="">
+						<img class="yarn-img" src="/assets/yarn-img/Pandora_251.png" alt="pink mohair yarn">
 						<div class="hover-display display-none">
 							<ul>
 								<li class="hover-title">Silk</li>
@@ -288,16 +286,16 @@
 								<li class="item-price">99 NOK</li>
 							</ul>
 							<button class="add-to-cart-button">
-								<img class src="/assets/icons/cart-outline.svg" alt="">
+								<img class src="/assets/icons/cart-outline.svg" alt="add to cart icon">
 							</button>
 							<div class="add-to-cart-display display-none">
-								<img src="/assets/icons/cart.svg" alt="">
-								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="">
+								<img src="/assets/icons/cart.svg" alt="add to cart icon">
+								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="checked">
 							</div>
 						</div>
 					</div>
 					<div class="yarn-img-container list-item" data-price="75" data-name="velvet" data-type="mohair,green">
-						<img class="yarn-img" src="/assets/yarn-img/TJUKK_MOHAIR-252314-Gronn.png" alt="">
+						<img class="yarn-img" src="/assets/yarn-img/TJUKK_MOHAIR-252314-Gronn.png" alt="green mohair yarn">
 						<div class="hover-display display-none">
 							<ul>
 								<li class="hover-title">Velvet</li>
@@ -306,16 +304,16 @@
 								<li class="item-price">75 NOK</li>
 							</ul>
 							<button class="add-to-cart-button">
-								<img class src="/assets/icons/cart-outline.svg" alt="">
+								<img class src="/assets/icons/cart-outline.svg" alt="add to cart icon">
 							</button>
 							<div class="add-to-cart-display display-none">
-								<img src="/assets/icons/cart.svg" alt="">
-								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="">
+								<img src="/assets/icons/cart.svg" alt="add to cart icon">
+								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="checked">
 							</div>
 						</div>
 					</div>
 					<div class="yarn-img-container list-item" data-price="99" data-name="linen" data-type="wool,linen,green">
-						<img class="yarn-img" src="/assets/yarn-img/PT5_590.png" alt="">
+						<img class="yarn-img" src="/assets/yarn-img/PT5_590.png" alt="green linen wool yarn">
 						<div class="hover-display display-none">
 							<ul>
 								<li class="hover-title">Linen mix</li>
@@ -324,16 +322,16 @@
 								<li class="item-price">99 NOK</li>
 							</ul>
 							<button class="add-to-cart-button">
-								<img class src="/assets/icons/cart-outline.svg" alt="">
+								<img class src="/assets/icons/cart-outline.svg" alt="add to cart icon">
 							</button>
 							<div class="add-to-cart-display display-none">
-								<img src="/assets/icons/cart.svg" alt="">
-								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="">
+								<img src="/assets/icons/cart.svg" alt="add to cart icon">
+								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="checked">
 							</div>
 						</div>
 					</div>
 					<div class="yarn-img-container list-item" data-price="115" data-name="silky" data-type="mohair,alpaca,orange">
-						<img class="yarn-img" src="/assets/yarn-img/tretraad.png" alt="">
+						<img class="yarn-img" src="/assets/yarn-img/tretraad.png" alt="orange mohair yarn">
 						<div class="hover-display display-none">
 							<ul>
 								<li class="hover-title">Silky Mohair</li>
@@ -342,16 +340,16 @@
 								<li class="item-price">115 NOK</li>
 							</ul>
 							<button class="add-to-cart-button">
-								<img class src="/assets/icons/cart-outline.svg" alt="">
+								<img class src="/assets/icons/cart-outline.svg" alt="add to cart icon">
 							</button>
 							<div class="add-to-cart-display display-none">
-								<img src="/assets/icons/cart.svg" alt="">
-								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="">
+								<img src="/assets/icons/cart.svg" alt="add to cart icon">
+								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="checked">
 							</div>
 						</div>
 					</div>
 					<div class="yarn-img-container list-item" data-price="87" data-name="chuncky" data-type="mohair,blue">
-						<img class="yarn-img" src="/assets/yarn-img/alpakka_Puno_388.png" alt="">
+						<img class="yarn-img" src="/assets/yarn-img/alpakka_Puno_388.png" alt="blue mohair yarn">
 						<div class="hover-display display-none">
 							<ul>
 								<li class="hover-title">Chuncky Mohair</li>
@@ -360,16 +358,16 @@
 								<li class="item-price">87 NOK</li>
 							</ul>
 							<button class="add-to-cart-button">
-								<img class src="/assets/icons/cart-outline.svg" alt="">
+								<img class src="/assets/icons/cart-outline.svg" alt="add to cart icon">
 							</button>
 							<div class="add-to-cart-display display-none">
-								<img src="/assets/icons/cart.svg" alt="">
-								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="">
+								<img src="/assets/icons/cart.svg" alt="add to cart icon">
+								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="checked">
 							</div>
 						</div>
 					</div>
 					<div class="yarn-img-container list-item" data-price="55" data-name="summer" data-type="linen,blue">
-						<img class="yarn-img" src="/assets/yarn-img/vandre.png" alt="">
+						<img class="yarn-img" src="/assets/yarn-img/vandre.png" alt="blue linen yarn">
 						<div class="hover-display display-none">
 							<ul>
 								<li class="hover-title">Summer</li>
@@ -378,16 +376,16 @@
 								<li class="item-price">55 NOK</li>
 							</ul>
 							<button class="add-to-cart-button">
-								<img class src="/assets/icons/cart-outline.svg" alt="">
+								<img class src="/assets/icons/cart-outline.svg" alt="add to cart icon">
 							</button>
 							<div class="add-to-cart-display display-none">
-								<img src="/assets/icons/cart.svg" alt="">
-								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="">
+								<img src="/assets/icons/cart.svg" alt="add to cart icon">
+								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="checked">
 							</div>
 						</div>
 					</div>
 					<div class="yarn-img-container list-item" data-price="49" data-name="islandic" data-type="wool,orange">
-						<img class="yarn-img" src="/assets/yarn-img/TUMI-2116704.png" alt="">
+						<img class="yarn-img" src="/assets/yarn-img/TUMI-2116704.png" alt="orange wool yarn">
 						<div class="hover-display display-none">
 							<ul>
 								<li class="hover-title">Islandic</li>
@@ -396,16 +394,16 @@
 								<li class="item-price">49 NOK</li>
 							</ul>
 							<button class="add-to-cart-button">
-								<img class src="/assets/icons/cart-outline.svg" alt="">
+								<img class src="/assets/icons/cart-outline.svg" alt="add to cart icon">
 							</button>
 							<div class="add-to-cart-display display-none">
-								<img src="/assets/icons/cart.svg" alt="">
-								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="">
+								<img src="/assets/icons/cart.svg" alt="add to cart icon">
+								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="checked">
 							</div>
 						</div>
 					</div>
 					<div class="yarn-img-container list-item" data-price="55" data-name="danish" data-type="wool,white">
-						<img class="yarn-img" src="/assets/yarn-img/vams.png" alt="">
+						<img class="yarn-img" src="/assets/yarn-img/vams.png" alt="white wool yarn">
 						<div class="hover-display display-none">
 							<ul>
 								<li class="hover-title">Danish</li>
@@ -414,11 +412,11 @@
 								<li class="item-price">55 NOK</li>
 							</ul>
 							<button class="add-to-cart-button">
-								<img class src="/assets/icons/cart-outline.svg" alt="">
+								<img class src="/assets/icons/cart-outline.svg" alt="add to cart icon">
 							</button>
 							<div class="add-to-cart-display display-none">
-								<img src="/assets/icons/cart.svg" alt="">
-								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="">
+								<img src="/assets/icons/cart.svg" alt="add to cart icon">
+								<img class="add-to-cart-display-2" src="/assets/icons/checked.png" alt="checked">
 							</div>
 						</div>
 					</div>
@@ -428,8 +426,8 @@
 		
 		<section class="up-grid">
 			<div class="up-container">
-				<button class="up-button display-none">
-					<img class="up-img" src="/assets/icons/arrow-up.svg" alt="arrow up">
+				<button class="up-button display-none-scroll">
+					<img class="up-img" src="/assets/icons/arrow-down.svg" alt="arrow up">
 				</button>
 			</div>
 		</section>

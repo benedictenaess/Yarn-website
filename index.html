@@ -16,10 +16,11 @@
 				<img src="assets/Logo.svg" alt="Logo">
 			</button>
 			<button class="header-container-button button-search">
-				<img src="assets/icons/search-outline.svg" alt="Search icon">
+				<img class="header-search-icon" src="assets/icons/search-outline.svg" alt="Search icon">
+				<input class="header-search-input" type="text">
 			</button>
 			<button class="header-container-button button-cart">
-				<img src="assets/icons/cart-outline.svg" alt="">
+				<img src="assets/icons/cart-outline.svg" alt="cart icon">
 			</button>
 			<button class="header-container-button button-hamburger">
 				<img src="assets/icons/hamburger.svg" alt="Hamburger icon">
@@ -27,8 +28,8 @@
 		</div>
 		<div class="active-menu active-menu-hide active-menu-show">
 			<div class="active-menu-container">
+				<button class="active-menu-button home-button">Home</button>
 				<button class="active-menu-button yarn-button">Yarn</button>
-				<button class="active-menu-button pattern-button">Patterns</button>
 				<button class="active-menu-button about-button">About us</button>
 			</div>
 		</div>
@@ -44,7 +45,10 @@
 
 	<main>
 		<section class="form-section">
-			<form class="form-container" action="">
+			<form class="form-container">
+				<button class="form-close-icon">
+					<img src="/assets/icons/close-icon.svg" alt="close button">
+				</button>
 				<h2 class="form-title">Sign up to our newsletter</h2>
 				<div class="center-line">
 					<div class="form-line-large"></div>
@@ -64,8 +68,8 @@
 					</div>
 					<div class="signup-button-container">
 						<div>
-							<input type="checkbox" name="checkbox" id="checkbox" required>
-							<label for="checkbox">I agree to the Terms and Conditions</label>
+							<input type="checkbox" name="checkbox" id="checkbox">
+							<label class="checkbox-label" for="checkbox">I agree to the Terms and Conditions</label>
 						</div>
 						<button class="signup-button">Submit</button>
 					</div>
@@ -81,9 +85,15 @@
 		
 		<section class="photo-collection">
 			<div class="photo-collection-container">
-				<img class="big-photo" src="assets/img/behrouz-sasani-LePI2_xIjUU-unsplash.jpg" alt="blue knitted sweater">
-				<img class="medium-photo" src="assets/img/mukuko-studio-mU88MlEFcoU-unsplash.jpg" alt="white knitted sweater">
-				<img class="small-photo" src="assets/img/nordwood-themes-bp1ydkAtwFI-unsplash.jpg" alt="orange yarn">
+				<div class="big-photo photo-collection-image">
+					<img src="assets/img/behrouz-sasani-LePI2_xIjUU-unsplash.jpg" alt="blue knitted sweater">
+				</div>
+				<div class="medium-photo photo-collection-image">
+					<img src="assets/img/mukuko-studio-mU88MlEFcoU-unsplash.jpg" alt="white knitted sweater">
+				</div>
+				<div class="small-photo photo-collection-image">
+					<img src="assets/img/nordwood-themes-bp1ydkAtwFI-unsplash.jpg" alt="orange yarn">
+				</div>
 			</div>
 		</section>
 		
@@ -95,8 +105,8 @@
 					<div class="title-line"></div>
 				</div>
 				<p class="frontpage-text-medium">Get inspired with</p>
-				<p class="frontpage-text-large"> our new patterns</p>
-				<p class="frontpage-text-medium">and colors of yarn</p>
+				<p class="frontpage-text-large">our new colors</p>
+				<p class="frontpage-text-medium">of all your favorit yarn</p>
 			</div>
 		</section>
 		
@@ -104,45 +114,46 @@
 			<div class="slideshow-container">
 				<div class="slideshow-images-container">
 					<div class="slideshow-img-container">
-						<img src="assets/yarn-img/ALPAKKA-LIN_2511354_Oransje.png" alt="">
+						<img src="assets/yarn-img/ALPAKKA-LIN_2511354_Oransje.png" alt="orange yarn">
 					</div>
 					<div class="slideshow-img-container">
-						<img src="assets/yarn-img/bomull_linPelini.png" alt=""></div>
-						<div class="slideshow-img-container">
-							<img src="assets/yarn-img/Gammelserie_400.png" alt="">
-						</div>
-						<div class="slideshow-img-container">
-							<img src="assets/yarn-img/bomull_Helarsgarn_278.png" alt="">
-						</div>
-						<div class="slideshow-img-container">
-							<img src="assets/yarn-img/alpakka_Puno_388.png" alt="">
-						</div>
-						<div class="slideshow-img-container">
-							<img src="assets/yarn-img/alpakka_Iris_B126.png" alt="">
-						</div>
-						<div class="slideshow-img-container">
-							<img src="assets/yarn-img/MITU-2830061.png" alt="">
-						</div>
-						<div class="slideshow-img-container">
-							<img src="assets/yarn-img/mohair_Plum_069.png" alt="">
-						</div>
+						<img src="assets/yarn-img/bomull_linPelini.png" alt="cotton yarn">
+					</div>
+					<div class="slideshow-img-container">
+						<img src="assets/yarn-img/Gammelserie_400.png" alt="wool yarn">
+					</div>
+					<div class="slideshow-img-container">
+						<img src="assets/yarn-img/bomull_Helarsgarn_278.png" alt="orange cotton yarn">
+					</div>
+					<div class="slideshow-img-container">
+						<img src="assets/yarn-img/alpakka_Puno_388.png" alt="alpaca yarn">
+					</div>
+					<div class="slideshow-img-container">
+						<img src="assets/yarn-img/alpakka_Iris_B126.png" alt="blue yarn">
+					</div>
+					<div class="slideshow-img-container">
+						<img src="assets/yarn-img/MITU-2830061.png" alt="green yarn">
+					</div>
+					<div class="slideshow-img-container">
+						<img src="assets/yarn-img/mohair_Plum_069.png" alt="mohair yarn">
 					</div>
 				</div>
+			</div>
 				
-				<div class="slideshow-controls">
-					<button class="slideshow-previous-button">
-						<img src="/assets/icons/arrow-up.svg" alt="">
-					</button>
-					<button class="slideshow-next-button">
-						<img src="/assets/icons/arrow-up.svg" alt="">
-					</button>
-				</div>
-			</section>
+			<div class="slideshow-controls">
+				<button class="slideshow-previous-button">
+					<img src="/assets/icons/arrow-down.svg" alt="arrow left">
+				</button>
+				<button class="slideshow-next-button">
+					<img src="/assets/icons/arrow-down.svg" alt="arrow right">
+				</button>
+			</div>
+		</section>
 			
 			<section class="up-grid">
 				<div class="up-container">
-					<button class="up-button display-none">
-						<img class="up-img" src="/assets/icons/arrow-up.svg" alt="arrow up">
+					<button class="up-button display-none-scroll">
+						<img class="up-img" src="/assets/icons/arrow-down.svg" alt="arrow up">
 					</button>
 				</div>
 			</section>

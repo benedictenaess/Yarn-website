@@ -25,7 +25,7 @@
 }
 
 .img-container {
-	width: 70%;
+	width: 80%;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -123,4 +123,23 @@ li {
 .yarn-container button:hover {
 	background-color: var(--color-accent-1);
 	box-shadow: 3px 3px 1px rgba(146, 146, 146, 0.42);
+}
+
+@media (max-width: 740px) {
+	.img-container {
+		width: 90%;
+	}
+}
+
+@media (max-width: 624px) {
+	.img-container {
+		width: 100%;
+	}
+}
+
+@media (max-width: 561px) {
+	.yarn-img-container {
+		width: 130px;
+		height: 130px;
+	}
 }

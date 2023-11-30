@@ -1,5 +1,5 @@
 :root {
-	--font-size-xsmall: 12px;
+	--font-size-xsmall: 14px;
 	--font-size-small: 18px;
 	--font-size-base: 24px;
 	--font-size-medium: 48px;
@@ -27,4 +27,49 @@
 	--spacing-xxlarge: 15rem;
 
 	--line-height: 1.6rem;
+}
+
+
+
+	
+@media (max-width: 700px) {
+	:root {
+		--font-size-xsmall: 12px;
+		--font-size-small: 18px;
+		--font-size-base: 24px;
+		--font-size-medium: 30px;
+		--font-size-large: 48px;
+		--font-size-xlarge: 64px;
+	
+		--spacing-small: 0.2rem;
+		--spacing-small-medium: 0.5rem;
+		--spacing-medium: 1rem;
+		--spacing-medium-large: 1.5rem;
+		--spacing-large: 3rem;
+		--spacing-xlarge: 6rem;
+		--spacing-xxlarge: 10rem;
+	
+		--line-height: 1.6rem;
+	}	
+}
+
+@media (max-width: 500px) {
+	:root {
+		--font-size-xsmall: 8px;
+		--font-size-small: 12px;
+		--font-size-base: 18px;
+		--font-size-medium: 24px;
+		--font-size-large: 30px;
+		--font-size-xlarge: 48px;
+	
+		--spacing-small: 0.1rem;
+		--spacing-small-medium: 0.2rem;
+		--spacing-medium: 0.5rem;
+		--spacing-medium-large: 1rem;
+		--spacing-large: 1.5rem;
+		--spacing-xlarge: 3rem;
+		--spacing-xxlarge: 6rem;
+	
+		--line-height: 1.6rem;
+	}
 }

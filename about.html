@@ -17,10 +17,11 @@
 				<img src="assets/Logo.svg" alt="Logo">
 			</button>
 			<button class="header-container-button button-search">
-				<img src="assets/icons/search-outline.svg" alt="Search icon">
+				<img class="header-search-icon" src="assets/icons/search-outline.svg" alt="Search icon">
+				<input class="header-search-input" type="text">
 			</button>
 			<button class="header-container-button button-cart">
-				<img src="assets/icons/cart-outline.svg" alt="">
+				<img src="assets/icons/cart-outline.svg" alt="cart icon">
 			</button>
 			<button class="header-container-button button-hamburger">
 				<img src="assets/icons/hamburger.svg" alt="Hamburger icon">
@@ -28,8 +29,8 @@
 		</div>
 		<div class="active-menu active-menu-hide active-menu-show">
 			<div class="active-menu-container">
+				<button class="active-menu-button home-button">Home</button>
 				<button class="active-menu-button yarn-button">Yarn</button>
-				<button class="active-menu-button pattern-button">Patterns</button>
 				<button class="active-menu-button about-button">About us</button>
 			</div>
 		</div>
@@ -63,43 +64,45 @@
 			<div class="info-section-container">
 				<h2>Practical info</h2>
 				<div class="accordion-grid">
-					<div class="accordion-flex">
-						<div class="accordion-1 accordion-container">
-							<button class="accordion-title">Our location</button>
-							<div class="accordion-content">
-								<ul>
-									<li>Yarn yarn yarn Co.</li>
-									<li>Sheepshire Fields, YR 54321,</li>
-									<li>Iceland</li>
-								</ul>
+					<div class="accordions-container">
+						<div class="accordion-flex">
+							<div class="accordion-container">
+								<button class="accordion-title">Our location</button>
+								<div class="accordion-content">
+									<ul>
+										<li>Yarn yarn yarn Co.</li>
+										<li>Sheepshire Fields, YR 54321,</li>
+										<li>Iceland</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<div class="accordion-flex">
+							<div class="accordion-container">
+								<button class="accordion-title">Contact information</button>
+								<div class="accordion-content">
+									<ul>
+										<li>Email: support@yarnyarnyarn.com</li>
+										<li>Phone: 555-123-4567</li>
+										<li>Business Hours: Mon to Fri, 9:00AM to 5:00PM</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<div class="accordion-flex">
+							<div class="accordion-container">
+								<button class="accordion-title">Delivery</button>
+								<div class="accordion-content">
+									We offer worldwide shipping for all your yarn needs. Standard shipping: 7-10 business days. Expedited shipping: 3-5 business days.
+								</div>
 							</div>
 						</div>
 					</div>
-
-					<div class="accordion-flex">
-						<div class="accordion-2 accordion-container">
-							<button class="accordion-title">Contact information</button>
-							<div class="accordion-content">
-								<ul>
-									<li>Email: support@yarnyarnyarn.com</li>
-									<li>Phone: 555-123-4567</li>
-									<li>Business Hours: Mon to Fri, 9:00AM to 5:00PM</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<div class="accordion-flex">
-						<div class="accordion-3 accordion-container">
-							<button class="accordion-title">Delivery</button>
-							<div class="accordion-content">
-								We offer worldwide shipping for all your yarn needs. Standard shipping: 7-10 business days. Expedited shipping: 3-5 business days.
-							</div>
-						</div>
-					</div>
-
-					<div class="accordion-4">
-						<img class="about-img-2" src="assets/img/timothy-eberly-guVbGnjpenU-unsplash.jpg" alt="">
+						
+					<div class="accordion-img">
+						<img class="about-img-2" src="assets/img/timothy-eberly-guVbGnjpenU-unsplash.jpg" alt="two sheep">
 					</div>
 				</div>
 			</div>
@@ -127,10 +130,11 @@
 				</div>
 			</div>
 		</section>
+		
 		<section class="up-grid">
 			<div class="up-container">
-				<button class="up-button display-none">
-					<img class="up-img" src="/assets/icons/arrow-up.svg" alt="arrow up">
+				<button class="up-button display-none-scroll">
+					<img class="up-img" src="/assets/icons/arrow-down.svg" alt="arrow up">
 				</button>
 			</div>
 		</section>
