@@ -15,6 +15,7 @@ img {
 
 button {
 	font: inherit;
+	color: black;
 	background: transparent;
 	border: none;
 	cursor: pointer;
