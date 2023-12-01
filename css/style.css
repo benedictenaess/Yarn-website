@@ -663,4 +663,7 @@ input::-webkit-outer-spin-button {
 	.slideshow-next-button img {
 		width: 40px;
 	}
+	.cart-container {
+		min-width: 300px;
+	}
 }
