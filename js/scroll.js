@@ -1,5 +1,3 @@
-//scroll up button
-
 const upButton = document.querySelector('.up-button');
 
 window.addEventListener('scroll', () => {

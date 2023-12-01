@@ -25,7 +25,6 @@ searchButton.addEventListener('mouseleave', () => {
 	searchIcon.style.display = 'block';
 })
 
-
 // cart container
 
 const cartHeaderIcon = document.querySelector('.button-cart');
@@ -60,10 +59,7 @@ aboutBtn.addEventListener('click', ()=>{
 	window.location.href = 'about.html';
 });
 
-
 //singup
-
-
 
 const singupContainer = document.querySelector('.form-section');
 
@@ -144,7 +140,7 @@ const frontpageSignupPopup = () => {
 
 frontpageSignupPopup();
 
-//Slideshow
+//slideshow
 
 const scrollContainer = document.querySelector('.slideshow-images-container');
 const previousBtn = document.querySelector('.slideshow-previous-button');

@@ -1,6 +1,3 @@
-//cart icon
-
-
 const yarnCarts = document.querySelectorAll('.hover-display button');
 const addToCartDisplays = document.querySelectorAll('.add-to-cart-display');
 let clickCount = 0;
@@ -35,9 +32,6 @@ yarnCarts.forEach((yarnCart, index) => {
     });
 });
 
-
-
-/////////////////////////
 
 const addQuantity = (itemTitle) => {
 
@@ -135,7 +129,6 @@ addToCartButton.forEach(addToCartButton => {
 
 
 const updateCartTotal = () => {
-    // const cartItemsContainer = document.querySelector('.cart-items');
     const cartRows = document.querySelectorAll('.cart-row');
     let total = 0;
 

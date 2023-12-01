@@ -24,7 +24,6 @@ const hoverImg = () => {
 
 hoverImg();
 
-
 //filter and sort
 
 const filterButtons = document.querySelectorAll('.filter-button');
