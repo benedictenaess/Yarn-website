@@ -629,25 +629,15 @@ input::-webkit-outer-spin-button {
 		width: 40px;
 	}
 	.cart-container {
-		width: 100vw;
+		width: 300px;
+		max-width: 300px;
+		min-width: 400px;
+		justify-content: flex-end;
 	}
 	.cart-column {
-		width: 140px;
+		width: 120px;
 	}
 	.cart-item-img {
-		width: 80px;
-		margin-right: var(--spacing-small);
-	}
-	.cart-quantity-input {
-		margin-right: var(--spacing-small);
-	}
-	.cart-price {
-		margin-right: var(--spacing-small);
-	}
-	.cart-total {
-		width: 150px;
-		margin: var(--spacing-small);
-		justify-content: space-between;
-		gap: 40px;
+		display: none;
 	}
 }
