@@ -14,6 +14,9 @@ js: Contains JavaScript files for the project, including functionality for handl
 index.html: Front page of the website.
 yarn-page.html: Yarn page of the website.
 
+**Image License:**
+Images are sourced from [Unsplash](https://unsplash.com/) and are free to use.
+
 ## Features
 
 Responsive design: The website is designed to work well on various devices and screen sizes.
@@ -24,3 +27,5 @@ Newsletter signup: A form allows users to sign up for the newsletter.
 ## Link
 
 https://zingy-palmier-e48a69.netlify.app
+
+
