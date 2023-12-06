@@ -20,3 +20,7 @@ Responsive design: The website is designed to work well on various devices and s
 Navigation: Users can navigate between all the pages using the header menu.
 Cart functionality: The website includes a shopping cart where users can add and remove items.
 Newsletter signup: A form allows users to sign up for the newsletter.
+
+## Link
+
+https://zingy-palmier-e48a69.netlify.app
